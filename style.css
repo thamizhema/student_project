@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+
+@font-face {
+  font-family: "mainFont";
+  src: url("./font/stay\ gold.ttf");
+}
+:root {
+  --s-color: grey;
+  --txt-mainColor: #323232;
+  --btn-color: #c5326a;
+  --btn-textColor: white;
+  --logo-font: "mainFont";
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(57, 57, 57);
+}
+.appbar-div {
+  height: 60px;
+  background: var(--btn-textColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.menu-icon {
+  color: var(--s-color);
+  font-size: 25px;
+  display: none;
+}
+.left-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand span {
+  font-size: 30px;
+  /* font-family: var(--logo-font); */
+  font-family: "Trade Winds", cursive;
+}
+.menu-div ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-div ul li {
+  margin: 0 5px;
+}
+.menu-div ul li a {
+  text-decoration: none;
+  color: var(--s-color);
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+.menu-div ul li a:hover {
+  color: var(--txt-mainColor);
+}
+
+/* right div */
+.right-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-div > * {
+  margin: 0 5px;
+}
+.s-icon {
+  color: var(--s-color);
+  cursor: pointer;
+}
+.btn {
+  cursor: pointer;
+  background: var(--btn-color);
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: var(--btn-textColor);
+}
+.btn.s-u:hover {
+  background: #e06997;
+}
+
+.btn.s-i {
+  background: transparent;
+  color: var(--s-color);
+}
+
+@media (max-width: 980px) {
+  .menu-icon {
+    display: block;
+  }
+  .menu-div,
+  .btn.s-u,
+  .s-icon {
+    display: none;
+  }
+}
