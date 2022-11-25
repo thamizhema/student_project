@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @font-face {
   font-family: "mainFont";
   src: url("./font/stay\ gold.ttf");
@@ -41,7 +40,7 @@ body {
 .brand span {
   font-size: 30px;
   /* font-family: var(--logo-font); */
-  font-family: "Trade Winds", cursive;
+  font-family: "Pacifico";
 }
 .menu-div ul {
   display: flex;
