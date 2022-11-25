@@ -4,7 +4,7 @@
   src: url("./font/stay\ gold.ttf");
 }
 :root {
-  --s-color: grey;
+  --s-color: #757575;
   --txt-mainColor: #323232;
   --btn-color: #c5326a;
   --btn-textColor: white;
